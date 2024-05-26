@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CGPA Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CGPA Calculator</h1>
+    <div>
+      <label for="currentCredits">Current Credits:</label>
+      <input type="number" id="currentCredits" required>
+    </div>
+    <div>
+      <label for="currentCGPA">Current CGPA:</label>
+      <input type="number" id="currentCGPA" step="0.01" required>
+    </div>
+    <div>
+      <label for="numberOfCourses">Number of Courses:</label>
+      <input type="number" id="numberOfCourses" required>
+    </div>
+    <div id="courseInputs"></div>
+    <button onclick="calculateCGPA()">Calculate CGPA</button>
+    <h2 id="result"></h2>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
